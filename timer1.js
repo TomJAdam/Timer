@@ -1,7 +1,9 @@
 // simple timer from the command line
 
+//takes input from the command line (1 2 4 10)
 const input = process.argv.splice(2);
 
+//plays a sound and prints a symbol for each input
 const timer1 = (seconds) => {
   
   for (let i = 0; i < seconds.length; i++) {
@@ -17,5 +19,7 @@ const timer1 = (seconds) => {
     }
   }
 };
+
+module.exports = timer1;
 
 timer1(input);
